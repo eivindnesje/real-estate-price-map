@@ -121,7 +121,7 @@ export default function MapComponent() {
 
   return (
     <div className='m-4'>
-      <LoadScript googleMapsApiKey={process.env.VITE_GOOGLE_MAPS_API_KEY}>
+      <LoadScript googleMapsApiKey='AIzaSyDjzl1rWqcUAVMLCIrLFUYrJAqWgKUmqAs'>
         <GoogleMap
           mapContainerStyle={{
             width: '100%',
@@ -132,7 +132,7 @@ export default function MapComponent() {
             lng: 10.75,
           }}
           zoom={11}
-          options={{ mapId: process.env.VITE_GOOGLE_MAP_ID }}
+          options={{ mapId: '42cab03dda42e877' }}
           onLoad={(map) => {
             mapRef.current = map;
             setIsMapLoaded(true);
